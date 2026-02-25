@@ -682,7 +682,8 @@ def _get_args():
 
     if args.evaluate is not None or args.evaluate_config is not None:
         logging.error(
-            "Model evaluation is no longer supported in this script. Ignore and continue."
+            "Model evaluation is no longer supported in this script."
+            " Use evaluate_model.py instead. Ignore and continue."
         )
 
     return args
